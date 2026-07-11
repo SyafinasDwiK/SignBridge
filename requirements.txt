@@ -1,0 +1,9 @@
+Flask
+gunicorn
+google-generativeai
+python-dotenv
+numpy
+joblib
+scikit-learn
+mediapipe
+opencv-python-headless
