@@ -46,7 +46,7 @@ Berikan jawaban yang ringkas namun informatif.
 """
 )
 
-model = joblib.load("../model/bisindo_model_2.pkl")
+model = joblib.load("../model/bisindo_model_4.pkl")
 
 @app.route("/")
 def home():
