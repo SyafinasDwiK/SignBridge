@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignBridge</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='logo.png') }}">
+    <link rel="stylesheet"href="{{ url_for('static', filename='style.css') }}">
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Kembali ke atas">
+          <span class="brand-mark">SB</span>
+          <span class="brand-text">SignBridge</span>
+        </a>
+
+        <nav class="nav" aria-label="Navigasi utama">
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#demo">Demo</a></li>
+          </ul>
+      </div>
+    </header>
+
+    <main id="top">
+
+      <section id="home" class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>Belajar Bahasa Isyarat Indonesia <strong>(BISINDO)</strong> Lebih Mudah dengan AI SignBridge</h1>
+            <p class="lead">
+              SignBridge membantu masyarakat mengenal Bahasa Isyarat Indonesia (BISINDO) melalui teknologi Computer Vision dan AI. Belajar menjadi lebih mudah, interaktif, dan dapat dilakukan kapan saja sehingga komunikasi dengan teman Tuli semakin inklusif.
+            </p>
+            <!-- Button di Header-->
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#demo">Coba Demo</a>
+              <a class="btn btn-ghost" href="#assistant">Tanya AI</a>
+            </div>
+
+            <p class="small-note">
+              Catatan: Untuk hasil demo terbaik, pastikan kamera aktif dan pencahayaan ruangan cukup terang.
+            </p>
+          </div>
+
+          <div class="hero-media">
+            <img
+              src="{{ url_for('static', filename='infografis-bhs-isyarat-4.jpg') }}"
+              alt="BISINDO Alphabet"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section section-alt">
+        <div class="container">
+          <h2 class="section-title">Mengapa SignBridge Hadir?</h2>
+          <p class="section-subtitle">Komunikasi adalah hak setiap orang. Namun, masih banyak penyandang Tuli yang mengalami kesulitan berkomunikasi karena masyarakat belum mengenal Bahasa Isyarat Indonesia (BISINDO).</p>
+          <p class="section-subtitle">SignBridge hadir sebagai media pembelajaran yang memanfaatkan teknologi Artificial Intelligence agar siapa saja dapat mulai belajar bahasa isyarat secara mandiri dan menyenangkan.</p>
+        </div>
+      </section>
+
+      <section id="problem" class="section">
+        <div class="container">
+
+          <h2 class="section-title">Mengapa Ini Penting?</h2>
+
+          <p class="section-subtitle">
+            Masih banyak penyandang Tuli yang menghadapi hambatan dalam berkomunikasi
+            karena Bahasa Isyarat Indonesia (BISINDO) belum dipahami secara luas.
+            SignBridge hadir untuk membantu masyarakat belajar BISINDO melalui teknologi
+            Artificial Intelligence agar komunikasi menjadi lebih inklusif.
+          </p>
+
+          <div class="cards">
+
+            <article class="card">
+              <div class="card-icon">🤝</div>
+              <h3>Hambatan Komunikasi</h3>
+              <p>
+                Banyak masyarakat belum memahami BISINDO sehingga komunikasi
+                dengan teman Tuli masih terbatas dalam kehidupan sehari-hari.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon">📚</div>
+              <h3>Akses Edukasi</h3>
+              <p>
+                Materi pembelajaran BISINDO belum mudah diakses oleh semua
+                kalangan sehingga proses belajar masih menjadi tantangan.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon">🌍</div>
+              <h3>Mendorong Inklusi</h3>
+              <p>
+                Semakin banyak masyarakat yang memahami bahasa isyarat,
+                semakin terbuka kesempatan untuk menciptakan lingkungan
+                yang ramah dan inklusif bagi penyandang Tuli.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon">🤖</div>
+              <h3>Teknologi sebagai Solusi</h3>
+              <p>
+                Dengan bantuan Computer Vision dan Artificial Intelligence,
+                proses belajar bahasa isyarat menjadi lebih interaktif,
+                mudah diakses, dan dapat dilakukan kapan saja.
+              </p>
+            </article>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section id="features" class="section section-alt">
+        <div class="container">
+
+          <h2 class="section-title">Apa yang Bisa Dilakukan SignBridge?</h2>
+
+          <p class="section-subtitle">
+            SignBridge menghadirkan berbagai fitur berbasis Artificial Intelligence
+            untuk membantu masyarakat belajar Bahasa Isyarat Indonesia (BISINDO)
+            secara mudah, interaktif, dan mandiri.
+          </p>
+
+          <div class="cards">
+
+            <article class="card">
+              <div class="card-icon">🖐</div>
+              <h3>Mengenali Bahasa Isyarat</h3>
+              <p>
+                AI mengenali gerakan tangan melalui kamera secara real-time
+                menggunakan teknologi Computer Vision sehingga pengguna dapat
+                langsung melihat hasil deteksi gesture yang dilakukan.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon">📖</div>
+              <h3>Belajar Huruf BISINDO</h3>
+              <p>
+                Pelajari alfabet Bahasa Isyarat Indonesia (BISINDO) melalui
+                latihan mandiri yang mudah dipahami, kapan saja dan di mana saja.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon">💬</div>
+              <h3>AI Assistant</h3>
+              <p>
+                Ajukan pertanyaan seputar BISINDO, cara belajar, maupun informasi
+                mengenai komunikasi inklusif, dan dapatkan penjelasan dari AI
+                secara cepat dan mudah dipahami.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon">⚡</div>
+              <h3>Umpan Balik Langsung</h3>
+              <p>
+                Pengguna dapat mengetahui hasil gerakan yang dilakukan beserta
+                tingkat keyakinan AI, sehingga proses belajar menjadi lebih
+                interaktif dan efektif.
+              </p>
+            </article>
+
+          </div>
+
+        </div>
+      </section>
+      
+      <section id="how" class="section">
+        <div class="container">
+
+          <h2 class="section-title">Mulai Belajar dalam 4 Langkah</h2>
+
+          <p class="section-subtitle">
+            Cukup ikuti empat langkah sederhana berikut untuk mulai belajar Bahasa
+            Isyarat Indonesia bersama SignBridge.
+          </p>
+
+          <div class="steps-grid">
+
+            <article class="step-card">
+              <div class="step-number">01</div>
+              <div class="card-icon">📷</div>
+              <h3>Aktifkan Kamera</h3>
+              <p>
+                Klik tombol <strong>Mulai Kamera</strong> untuk mengaktifkan webcam
+                dan memulai proses pembelajaran.
+              </p>
+            </article>
+
+            <article class="step-card">
+              <div class="step-number">02</div>
+              <div class="card-icon">🖐</div>
+              <h3>Tunjukkan Gesture</h3>
+              <p>
+                Lakukan gerakan huruf BISINDO di depan kamera sesuai panduan yang
+                tersedia.
+              </p>
+            </article>
+
+            <article class="step-card">
+              <div class="step-number">03</div>
+              <div class="card-icon">🤖</div>
+              <h3>AI Mengenali</h3>
+              <p>
+                Teknologi Computer Vision akan mendeteksi gesture dan menampilkan
+                hasil prediksi secara real-time.
+              </p>
+            </article>
+
+            <article class="step-card">
+              <div class="step-number">04</div>
+              <div class="card-icon">📚</div>
+              <h3>Pelajari Hasilnya</h3>
+              <p>
+                Lihat hasil deteksi, tingkat keyakinan AI, kemudian ulangi latihan
+                hingga gerakan menjadi lebih tepat.
+              </p>
+            </article>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section id="demo" class="section section-alt">
+        <div class="container">
+
+          <h2 class="section-title">Coba SignBridge Sekarang</h2>
+
+          <p class="section-subtitle">
+            Rasakan pengalaman belajar Bahasa Isyarat Indonesia secara interaktif
+            dengan teknologi Artificial Intelligence. Aktifkan kamera, lakukan
+            gesture, dan lihat hasil deteksi secara langsung.
+          </p>
+
+          <div class="demo-container">
+
+            <!-- Camera -->
+            <div class="demo-camera">
+
+              <h3>Preview Kamera</h3>
+
+              <div class="camera-wrapper">
+
+                  <video
+                      id="webcam"
+                      autoplay
+                      playsinline
+                      muted
+                      class="camera-preview">
+                  </video>
+
+                  <canvas
+                      id="outputCanvas"
+                      class="camera-preview">
+                  </canvas>
+
+              </div>
+              <button
+                id="startCamera"
+                class="btn btn-primary">
+                Mulai Kamera
+              </button>
+
+            </div>
+
+            <!-- Result -->
+            <div class="demo-result">
+
+              <h3>Hasil Deteksi</h3>
+
+              <div class="result-card">
+
+                <h4>Huruf Terdeteksi</h4>
+
+                <div
+                  id="prediction"
+                  class="prediction">
+                  -
+                </div>
+
+                <h4>Tingkat Keyakinan</h4>
+
+                <div
+                  id="confidence"
+                  class="confidence">
+                  0%
+                </div>
+
+                <p id="status" class="result-note">
+                    Klik <strong>Mulai Kamera</strong> untuk memulai deteksi Bahasa Isyarat Indonesia.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section id="assistant" class="section">
+        <div class="container">
+
+          <h2 class="section-title">Tanya AI Assistant SignBridge Tentang BISINDO</h2>
+
+          <p class="section-subtitle">
+            Bingung dengan bahasa isyarat atau ingin mengetahui informasi seputar
+            BISINDO? AI Assistant siap membantu menjawab pertanyaanmu dengan
+            penjelasan yang mudah dipahami.
+          </p>
+
+          <div class="chat-container">
+
+            <div id="chatMessages" class="chat-messages">
+
+              <div class="message ai">
+                 <div class="bubble">
+                    👋 Halo! Saya AI Assistant SignBridge.
+                      Silakan tanyakan apa saja.
+                  </div>
+              </div>
+
+          </div>
+
+          <div class="chat-input">
+
+            <input
+              id="chatInput"
+              type="text"
+              placeholder="Ketik pertanyaan..."
+            >
+
+             <button
+               id="sendChat"
+               class="btn btn-primary">Kirim
+              </button>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section id="faq" class="section section-alt">
+        <div class="container">
+
+          <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
+
+          <p class="section-subtitle">
+            Berikut beberapa pertanyaan yang sering diajukan mengenai SignBridge dan Bahasa Isyarat Indonesia.
+          </p>
+
+          <div class="chat-faq">
+
+            <!-- Chat 1 -->
+            <div class="chat user">
+              <div class="bubble">
+                Apa itu BISINDO?
+              </div>
+            </div>
+
+            <div class="chat ai">
+              <div class="bubble">
+                BISINDO (Bahasa Isyarat Indonesia) adalah bahasa isyarat yang
+                digunakan oleh komunitas Tuli di Indonesia sebagai bahasa
+                komunikasi sehari-hari.
+              </div>
+            </div>
+
+            <!-- Chat 2 -->
+            <div class="chat user">
+              <div class="bubble">
+                Apakah SignBridge gratis digunakan?
+              </div>
+            </div>
+
+            <div class="chat ai">
+              <div class="bubble">
+                Ya. SignBridge dikembangkan sebagai media pembelajaran sehingga
+                dapat digunakan secara gratis untuk belajar BISINDO.
+              </div>
+            </div>
+
+            <!-- Chat 3 -->
+            <div class="chat user">
+              <div class="bubble">
+                Apakah data kamera saya akan disimpan?
+              </div>
+            </div>
+
+            <div class="chat ai">
+              <div class="bubble">
+                Tidak. Kamera hanya digunakan untuk mendeteksi gesture secara
+                real-time dan tidak menyimpan data pengguna.
+              </div>
+            </div>
+
+            <!-- Chat 4 -->
+            <div class="chat user">
+              <div class="bubble">
+                Mengapa hasil AI terkadang kurang akurat?
+              </div>
+            </div>
+
+            <div class="chat ai">
+              <div class="bubble">
+                Hasil deteksi AI dapat dipengaruhi oleh pencahayaan, posisi tangan, kualitas kamera, dan cara melakukan gesture. Karena itu, SignBridge digunakan sebagai media belajar, bukan pengganti komunikasi secara langsung.
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section id="cta" class="section">
+        <div class="container cta-container">
+
+          <h2>Mari Wujudkan Komunikasi yang Lebih Inklusif</h2>
+
+          <p>
+            Setiap orang dapat berkontribusi menciptakan lingkungan yang lebih ramah
+            bagi penyandang Tuli. Mulailah belajar Bahasa Isyarat Indonesia bersama
+            SignBridge hari ini.
+          </p>
+
+          <a href="#demo" class="btn btn-primary">
+            Mulai Belajar
+          </a>
+
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="container footer-container">
+
+          <div class="footer-about">
+            <h3>SignBridge</h3>
+            <p>
+              Platform pembelajaran Bahasa Isyarat Indonesia (BISINDO) berbasis
+              Artificial Intelligence untuk mendukung komunikasi yang lebih inklusif.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h4>Menu</h4>
+            <ul>
+              <li><a href="#home">Beranda</a></li>
+              <li><a href="#about">Tentang</a></li>
+              <li><a href="#features">Fitur</a></li>
+              <li><a href="#demo">Demo</a></li>
+              <li><a href="#assistant">AI Assistant</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Kontak</h4>
+            <p>Email: signbridge@example.com</p>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 SignBridge. Semua hak cipta dilindungi.</p>
+        </div>
+      </footer>
+
+    </main>
+    
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+
+    <script src="{{ url_for('static', filename='camera.js') }}"></script>
+    <script src="{{ url_for('static', filename='predict.js') }}"></script>
+    <script src="{{ url_for('static', filename='chat.js') }}"></script>
+  </body>
+</html>
