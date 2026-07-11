@@ -3,8 +3,6 @@ gunicorn
 joblib
 numpy
 pandas
-scikit-learn
-mediapipe
-opencv-python
+scikit-learn==1.7.2
 python-dotenv
 google-generativeai
