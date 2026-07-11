@@ -50,7 +50,7 @@ model = joblib.load("model/bisindo_model_4.pkl")
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return "SignBridge berjalan!"
 
 
 @app.route("/predict", methods=["POST"])
