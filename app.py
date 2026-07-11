@@ -46,7 +46,7 @@ Berikan jawaban yang ringkas namun informatif.
 """
 )
 
-model = joblib.load("../model/bisindo_model_4.pkl")
+model = joblib.load("model/bisindo_model_4.pkl")
 
 @app.route("/")
 def home():
@@ -96,4 +96,4 @@ def chat():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000)
