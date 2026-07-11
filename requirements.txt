@@ -7,3 +7,4 @@ joblib
 scikit-learn
 mediapipe
 opencv-python-headless
+gunicorn
